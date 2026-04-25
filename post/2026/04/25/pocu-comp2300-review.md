@@ -9,11 +9,15 @@
 위 단어들은 일상적이 아닌, 기술적인 용어로 보는 게 올바르다.
 
 > (원문)
-> **High-level** describe those operations that are more **abstract** and general in nature; wherein the overall goals and systemic features are typically more concerned with the wider, macro system as a whole.
-> **Low-level** describes more specific individual components of a systematic operation, focusing on **the details of rudimentary micro functions** rather than macro, complex processes. Low-level classification is typically more concerned with individual components within the system and how they operate.
 > 
+> **High-level** describe those operations that are more **abstract** and general in nature; wherein the overall goals and systemic features are typically more concerned with the wider, macro system as a whole.
+> 
+> **Low-level** describes more specific individual components of a systematic operation, focusing on **the details of rudimentary micro functions** rather than macro, complex processes. Low-level classification is typically more concerned with individual components within the system and how they operate.
+>
 > (파파고 번역)
+> 
 > **High-level**은 본질적으로 더 **추상적**이고 일반적인 작업을 설명합니다. 여기서 전체 목표와 시스템적 특징은 일반적으로 더 넓은 거시 시스템 전체와 더 관련이 있습니다.
+> 
 > **Low-level**은 거시적이고 복잡한 프로세스보다는 **기본적인 미세 기능의 세부 사항**에 초점을 맞춘 체계적인 작업의 보다 구체적인 개별 구성 요소를 설명합니다. Low-level 분류는 일반적으로 시스템 내의 개별 구성 요소와 그 작동 방식에 더 중점을 둡니다.
 > 
 > 출처: [wikipedia](https://en.wikipedia.org/wiki/High-_and_low-level)
@@ -80,6 +84,8 @@
 	- Intel, AMD사 그리고 SIMD 명령어의 역사를 배우는데 되게 자세하다.
 	- 다양하고, 기괴하고, 최대한 축약시켜도 이름이 긴 SIMD 명령어들이 쏟아져 나오는데, 많이 사용하지 않으면 익숙해지지 않아서 니모닉 이름도 외우기가 무척 어렵다. (내 이야기이다..)
 	- 액셀로 간단한 3D 프로그래밍 렌더링 체험을 할 수 있다. ([출처: 포프TV](https://youtu.be/aLyi0SkuKmY?si=GduFhnYjyMM5bXYu&t=594))
+
+---
 ### 어셈블리 언어요? 외계어 같고, 관심도 없었고, 아예 몰랐어요
 
 ![](assets/binary_world.jpg)
@@ -110,6 +116,7 @@
 ![](assets/202601_scores.png)
 ![](assets/202601_achievement.png)
 
+---
 ### 그래서 이거 배워서 뭐 할건데요?
 
 어셈블리어 왜 하냐라는 질문을 받을 수 있다. 강의에서도 강사님이 자세하게 여러 답변을 해주신다.
@@ -120,7 +127,7 @@
 
 ### 아직은 그저 취미입니다
 
-어셈블리어와 관련은 없어 보이고, 종종 재미로 특정 파일 헤더를 가볍게 탐색해보곤 한다.
+어셈블리어와 관련은 거의 없지만, 종종 재미로 특정 파일 헤더를 가볍게 탐색해보곤 한다.
 
 ![](assets/exif_header.png)
 
