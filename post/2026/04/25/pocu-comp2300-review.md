@@ -127,6 +127,7 @@
 ![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//202601_achievement.png)
 
 ---
+
 ### 그래서 이거 배워서 뭐 할건데요?
 
 어셈블리어 왜 공부하냐라는 질문을 받을 수 있습니다. 강의에서도 강사님이 자세하게 여러 답변을 해주시거든요.
