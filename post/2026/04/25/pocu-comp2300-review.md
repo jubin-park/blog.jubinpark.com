@@ -12,12 +12,12 @@
 ---
 
 (원문)
-* **High-level** describe those operations that are more **abstract** and general in nature; wherein the overall goals and systemic features are typically more concerned with the wider, macro system as a whole.
-* **Low-level** describes more specific individual components of a systematic operation, focusing on **the details of rudimentary micro functions** rather than macro, complex processes. Low-level classification is typically more concerned with individual components within the system and how they operate.
+- **High-level** describe those operations that are more **abstract** and general in nature; wherein the overall goals and systemic features are typically more concerned with the wider, macro system as a whole.
+- **Low-level** describes more specific individual components of a systematic operation, focusing on **the details of rudimentary micro functions** rather than macro, complex processes. Low-level classification is typically more concerned with individual components within the system and how they operate.
 
 (파파고 번역) 
-* **High-level**은 본질적으로 더 **추상적**이고 일반적인 작업을 설명합니다. 여기서 전체 목표와 시스템적 특징은 일반적으로 더 넓은 거시 시스템 전체와 더 관련이 있습니다.
-* **Low-level**은 거시적이고 복잡한 프로세스보다는 **기본적인 미세 기능의 세부 사항**에 초점을 맞춘 체계적인 작업의 보다 구체적인 개별 구성 요소를 설명합니다. Low-level 분류는 일반적으로 시스템 내의 개별 구성 요소와 그 작동 방식에 더 중점을 둡니다.
+- **High-level**은 본질적으로 더 **추상적**이고 일반적인 작업을 설명합니다. 여기서 전체 목표와 시스템적 특징은 일반적으로 더 넓은 거시 시스템 전체와 더 관련이 있습니다.
+- **Low-level**은 거시적이고 복잡한 프로세스보다는 **기본적인 미세 기능의 세부 사항**에 초점을 맞춘 체계적인 작업의 보다 구체적인 개별 구성 요소를 설명합니다. Low-level 분류는 일반적으로 시스템 내의 개별 구성 요소와 그 작동 방식에 더 중점을 둡니다.
 
 출처: [wikipedia](https://en.wikipedia.org/wiki/High-_and_low-level)
 
@@ -43,7 +43,7 @@
 
 ![pobs.png](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//pobs.png)
 
-1. 시작 ~ 중간고사 이전 (6502 8비트 시대)
+#### 1. 시작 ~ 중간고사 이전 (6502 8비트 시대)
 	- 컴퓨터 추상화 레이어
 		- **저수준** 트랜지스터부터 **고수준** 어플리케이션까지
 		- 강의에서는 장난감 블록으로 비유합니다.
@@ -79,14 +79,15 @@
 
 ![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//buildbot_cv.png)
 
-2. 중간고사 이후 (x86 16비트, FPU 시대)
+#### 2. 중간고사 이후 (x86 16비트, FPU 시대)
 	- 6502와 인텔 8086 CPU의 명령어를 비교하면서 **델타학습**을 합니다.
 	- 이제부터는 **갓난아기**를 벗어났기 때문에, 강사님은 추가적인 명령어가 이런 게 있다 정도로 알려주고, 자세한 사항은 직접 찾아봐야 합니다.
 		- **강사님은 음식 재료들을 제공하고, 레시피는 우리가 직접 찾고 요리를 만들어 먹는다**는 것에 굳이 비유를 하면 되겠네요.
 	- FPU 프로그래밍과 x87 명령어를 학습합니다. 80비트 확장 부동소수점을 내부적으로 사용한다는 사실이 저에게 신선한 충격을 안겨다주었습니다.
 	- MS-DOS와 친숙해지는 계기가 됩니다. 어셈블리 코드를 ML(Microsoft Macro Assembler)로 빌드하고, CV(CodeView)로 레지스터 및 메모리 디버깅을 할 수 있습니다.
 	- 인터럽트 개념을 배우고, MSDOS, BIOS 서비스를 직접 사용하는 경험을 얻을 수 있습니다.
-3. 후반부 (x86 32/64비트 시대, 벡터 연산)
+
+#### 3. 후반부 (x86 32/64비트 시대, 벡터 연산)
 	- Intel, AMD사 그리고 SIMD 명령어의 역사를 배우는데 되게 자세합니다.
 	- 다양하고, 기괴하고, 최대한 축약시켜도 이름이 긴 SIMD 명령어들이 쏟아져 나오는데, 많이 사용하지 않으면 익숙해지지 않아서 니모닉 이름도 외우기가 무척 어려웠습니다.
 	- 액셀로 간단한 3D 프로그래밍 렌더링 체험을 할 수 있습니다. ([출처: 포프TV](https://youtu.be/aLyi0SkuKmY?si=GduFhnYjyMM5bXYu&t=594))
@@ -138,13 +139,13 @@
 
 ![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//exif_header.png)
 
-* 최근에 JPG 사진 파일에 EXIF(Exchangeable Image File Format)라는 메타데이터 헤더의 유무를 비교해보곤 했습니다. 자세히 알아본 건 아니지만, 첫 헤더에 **Exif** 라는 마크 스트링이 들어가고 그 뒤에는 알 수 없는 데이터들과 일부 날짜 문자열이 들어가는 데이터들을 확인했습니다.
+- 최근에 JPG 사진 파일에 EXIF(Exchangeable Image File Format)라는 메타데이터 헤더의 유무를 비교해보곤 했습니다. 자세히 알아본 건 아니지만, 첫 헤더에 **Exif** 라는 마크 스트링이 들어가고 그 뒤에는 알 수 없는 데이터들과 일부 날짜 문자열이 들어가는 데이터들을 확인했습니다.
 
 ![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//imhex.png)
 
-* [이전에 쓴 포스트](https://www.jubinpark.com/2025/06/jsf.html)에 올리기도 했지만, 자체 포맷의 경우 (ex: 오래된 게임 리소스 파일), 헤더를 하나씩 제 나름대로 추측하면서 리소스를 추출하는 작업을 했었습니다. 완전하게 해석은 못하지만, 일부는 리소스 파일 구조가 어떻게 되는지 보면서 소소한 궁금증을 해결하기도 합니다.
+- [이전에 쓴 포스트](https://www.jubinpark.com/2025/06/jsf.html)에 올리기도 했지만, 자체 포맷의 경우 (ex: 오래된 게임 리소스 파일), 헤더를 하나씩 제 나름대로 추측하면서 리소스를 추출하는 작업을 했었습니다. 완전하게 해석은 못하지만, 일부는 리소스 파일 구조가 어떻게 되는지 보면서 소소한 궁금증을 해결하기도 합니다.
 
-* [루비 언어의 마샬링(직렬화) 파일 파서 프로그램 ](https://github.com/rubymaro/rgss_rxdata_parser/blob/main/rgss_rxdata_parser/Main.cpp)개발을 진행한 것도 있었습니다. 해당 바이너리를 읽어서 C++ 클래스로 역직렬화하는 실험적인 프로젝트였죠.
+- [루비 언어의 마샬링(직렬화) 파일 파서 프로그램 ](https://github.com/rubymaro/rgss_rxdata_parser/blob/main/rgss_rxdata_parser/Main.cpp)개발을 진행한 것도 있었습니다. 해당 바이너리를 읽어서 C++ 클래스로 역직렬화하는 실험적인 프로젝트였죠.
 
 ### 마치며
 
@@ -154,7 +155,7 @@
 
 ---
 ### 다른 후기
-* [COMP3200](https://blog.naver.com/jubin-park/221614304715) 
-* [COMP1000](https://blog.naver.com/jubin-park/221912073980)
-* [COMP2500](https://blog.naver.com/jubin-park/222061871416)
-* [COMP2200](https://blog.naver.com/jubin-park/222187427716)
+- [COMP3200](https://blog.naver.com/jubin-park/221614304715) 
+- [COMP1000](https://blog.naver.com/jubin-park/221912073980)
+- [COMP2500](https://blog.naver.com/jubin-park/222061871416)
+- [COMP2200](https://blog.naver.com/jubin-park/222187427716)
