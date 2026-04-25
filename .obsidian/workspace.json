@@ -15,7 +15,7 @@
               "state": {
                 "file": "post/2026/04/25/pocu-comp2300-review.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "pocu-comp2300-review"
@@ -185,7 +185,7 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "a58329b2d0750282",
+  "active": "2d3b4076b9bfb97e",
   "lastOpenFiles": [
     "blog.jubinpark.com/COMP2300 어셈블리 프로그래밍: 포큐 아카데미 재수강 후기.md",
     "blog.jubinpark.com",
