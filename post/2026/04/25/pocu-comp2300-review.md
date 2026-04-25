@@ -9,6 +9,8 @@
 
 위 단어들은 일상적이 아닌, 기술적인 용어로 보는 게 올바릅니다.
 
+---
+
 (원문)
 * **High-level** describe those operations that are more **abstract** and general in nature; wherein the overall goals and systemic features are typically more concerned with the wider, macro system as a whole.
 * **Low-level** describes more specific individual components of a systematic operation, focusing on **the details of rudimentary micro functions** rather than macro, complex processes. Low-level classification is typically more concerned with individual components within the system and how they operate.
@@ -18,6 +20,8 @@
 * **Low-level**은 거시적이고 복잡한 프로세스보다는 **기본적인 미세 기능의 세부 사항**에 초점을 맞춘 체계적인 작업의 보다 구체적인 개별 구성 요소를 설명합니다. Low-level 분류는 일반적으로 시스템 내의 개별 구성 요소와 그 작동 방식에 더 중점을 둡니다.
 
 출처: [wikipedia](https://en.wikipedia.org/wiki/High-_and_low-level)
+
+---
 
 흔히 프로그래밍 언어에서, 저수준에 가까울 수록 기계가 이해하기 쉬운 쪽이고, 고수준에 가까울 수록 인간이 이해하기 쉽다고 표현합니다. 어셈블리어는 저수준에 가깝지만 CPU가 바로 읽고 실행할 수 있는 건 아니고, 기계어로 변환된 것이 최종 저수준 언어의 상태라고 보면 됩니다.
 ### 선수과목
@@ -34,7 +38,9 @@
 	- 구조체 및 비트 멤버, 공용체
 	- 함수와 스택
 
-### 강의 구성(일부)
+### 강의 구성 (일부)
+
+![pobs.png](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//pobs.png)
 
 1. 시작 ~ 중간고사 이전 (6502 8비트 시대)
 	- 컴퓨터 추상화 레이어
@@ -49,12 +55,11 @@
 			- (... 반복 ...)
 			- **결론적으로 아무리 어떤 고수준 언어라 할지라도, 최종적으로 사용중인 CPU에 맞는 기계어로 변환해서 실행한다는 것이 핵심입니다.**
 			- **그리고 프로그램 실행을 도와주는 주체는, 아주 사랑스럽고 소중한 OS입니다!**
-	* 재미있는 컴퓨터의 역사를 배웁니다.
+	- 재미있는 컴퓨터의 역사를 배웁니다.
 		- 앨런 튜링의 튜링 머신
 		- 폰 노이만 아저씨의 컴퓨터 구조
 	- MOS 6502 컴퓨터를 직접 만들거나, 6502를 시뮬레이트할 수 있는 프로그램 [POBS](https://github.com/POCU/COMP2300StarterPack/releases) 를 제공합니다.
 		- LED, 논리게이트, CPU, ROM, RAM 등의 부품을 브레드보드에 꼽고 와이어로 연결하여 완성합니다.
-		- ![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//pobs.png)
 		- 직접 만든 컴퓨터로 실제로 6502 어셈블리 코드를 작성하고 ROM에 플래시하여 실행할 수 있습니다.
 		- POBS에서 각종 레지스터와 메모리 값을 명령어 step 단위로 디버깅할 수 있는 기능이 제공됩니다.
 		- [POCU 아카데미 카카오톡 오픈 채팅방](https://open.kakao.com/o/pH8f3i8h)에 입장하면, 6502 컴퓨터 부품에 대한 정보를 얻거나 중고 구매를 하거나 운이 좋다면 나눔을 받을 수 있는 것으로 알고 있습니다. 조립을 실제로 원한다면 입장하여 정보를 얻는 게 좋겠습니다.
@@ -70,12 +75,14 @@
 	- 함수를 호출하는 연산이 왜 무거운지 알 수 있으며, 함수를 사용하지 말아야 한다는 사람들의 주장과 그 이유를 알 수 있었습니다.
 	- **평가값을 0과 비교하는 게** (개미 눈꼽만큼이지만) 성능이 더 빠른 이유를 알 수 있습니다. (힌트: 반복문에서 사용 시 큰 힘을 발휘할 수 있다!)
 	- 함수 호출 규약을 코딩을 통해 많이 연습할 수 있습니다.
+
+![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//buildbot_cv.png)
+
 2. 중간고사 이후 (x86 16비트, FPU 시대)
 	- 6502와 인텔 8086 CPU의 명령어를 비교하면서 **델타학습**을 합니다.
 	- 이제부터는 **갓난아기**를 벗어났기 때문에, 강사님은 추가적인 명령어가 이런 게 있다 정도로 알려주고, 자세한 사항은 직접 찾아봐야 합니. 
 		- **강사님은 음식 재료들을 제공하고, 레시피는 우리가 직접 찾고 요리를 만들어 먹는다**는 것에 굳이 비유를 하면 되겠네요.
 	- FPU 프로그래밍과 x87 명령어를 학습합니다. 80비트 확장 부동소수점을 내부적으로 사용한다는 사실이 저에게 신선한 충격을 안겨다주었습니다.
-	- ![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//buildbot_cv.png)
 	- MS-DOS와 친숙해지는 계기가 됩니다. 어셈블리 코드를 ML(Microsoft Macro Assembler)로 빌드하고, CV(CodeView)로 레지스터 및 메모리 디버깅을 할 수 있습니다.
 	- 인터럽트 개념을 배우고, MSDOS, BIOS 서비스를 직접 사용하는 경험을 얻을 수 있습니다.
 3. 후반부 (x86 32/64비트 시대, 벡터 연산)

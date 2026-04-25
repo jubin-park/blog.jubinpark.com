@@ -170,8 +170,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,10 +185,11 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "2d3b4076b9bfb97e",
+  "active": "a58329b2d0750282",
   "lastOpenFiles": [
-    "blog.jubinpark.com/pocu-comp2300-review.md.md",
+    "blog.jubinpark.com/COMP2300 어셈블리 프로그래밍: 포큐 아카데미 재수강 후기.md",
     "blog.jubinpark.com",
+    "blog.jubinpark.com/pocu-comp2300-review.md.md",
     "Untitled.canvas",
     "post/2026/04/25/pocu-comp2300-review.md",
     "post/2026/04/25/assets/pobs.png",
