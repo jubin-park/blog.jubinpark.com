@@ -144,8 +144,9 @@
 
 팁을 하나 공유할게요. 스택에 인자를 push/pop할 때의 스택의 상태를 그림으로 그렸는데 이게 무척 도움이 됐습니다. 공책에 그려도 되는데, 저의 경우 소스코드 파일에 주석으로 아스키 아트 하듯이 스택의 그림을 그렸습니다. 헷갈리다면 이 방법을 꼭 사용하길 권해드립니다.
 
+---
 ### 다른 후기
-* COMP3200: https://blog.naver.com/jubin-park/221614304715
-* COMP1000: https://blog.naver.com/jubin-park/221912073980
-* COMP2500: https://blog.naver.com/jubin-park/222061871416
-* COMP2200: https://blog.naver.com/jubin-park/222187427716
+* [COMP3200](https://blog.naver.com/jubin-park/221614304715) 
+* [COMP1000](https://blog.naver.com/jubin-park/221912073980)
+* [COMP2500](https://blog.naver.com/jubin-park/222061871416)
+* [COMP2200](https://blog.naver.com/jubin-park/222187427716)
