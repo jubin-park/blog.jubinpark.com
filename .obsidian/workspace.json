@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2765bbbcc422ebd4",
+        "id": "7f458fffd74555f4",
         "type": "tabs",
         "children": [
           {
-            "id": "052026f77a7acd1c",
+            "id": "e7cebfb089f51ab7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 331.5
   },
   "right": {
     "id": "f65d4cf63b84d432",
@@ -180,13 +180,25 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false,
+      "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "052026f77a7acd1c",
+  "active": "e7cebfb089f51ab7",
   "lastOpenFiles": [
-    "README.md",
+    "post/2026/04/25/pobs.png",
     "post/2026/04/25/pocu-comp2300-review.md",
+    "post/2026/04/25/buildbot_cv.png",
+    "post/2026/04/25/COMP2300.png",
+    "post/2026/04/25/imhex.png",
+    "post/2026/04/25/exif_header.png",
+    "post/2026/04/25/binary_world.jpg",
+    "post/2026/04/25/202601_achievement.png",
+    "post/2026/04/25/cheat-o-matic.png",
+    "post/2026/04/25/202601_scores.png",
+    "post/2026/04/25/202309_total_score.png",
+    "README.md",
     "Untitled.base",
     "post/2026/04/25.md",
     "post/2026/04/25",
