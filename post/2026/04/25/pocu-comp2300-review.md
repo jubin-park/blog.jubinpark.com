@@ -160,5 +160,5 @@
 ### 다른 후기
 - [COMP3200: C++ 언매니지드 프로그래밍](https://blog.naver.com/jubin-park/221614304715) 
 - [COMP1000: 소프트웨어 공학용 수학](https://blog.naver.com/jubin-park/221912073980)
-- [COMP2500: # 개체지향 프로그래밍 및 설계 (Java)](https://blog.naver.com/jubin-park/222061871416)
+- [COMP2500: 개체지향 프로그래밍 및 설계 (Java)](https://blog.naver.com/jubin-park/222061871416)
 - [COMP2200: C 언매니지드 프로그래밍](https://blog.naver.com/jubin-park/222187427716)
