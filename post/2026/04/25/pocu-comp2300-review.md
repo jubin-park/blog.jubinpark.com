@@ -1,5 +1,5 @@
 # COMP2300 어셈블리 프로그래밍: 포큐 아카데미 재수강 후기
-![](https://github.com/jubin-park/blog.jubinpark.com/tree/main/post/2026/04/25/assets/COMP2300.png)
+![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//COMP2300.png)
 
 > 포큐 아카데미 2026년 1월 학기 COMP2300 어셈블리 프로그래밍 과목을 2번째 도전 후 작성하는 후기글입니다. 독백하듯 작성한 글이여서, 비격식체로 진행합니다. 정보 습득에 도움이 되시길 바랍니다.
 ### 저수준 프로그래밍, 수준 낮은 프로그래밍?
@@ -57,7 +57,7 @@
 		- 폰 노이만 아저씨의 컴퓨터 구조
 	- MOS 6502 컴퓨터를 직접 만들거나, 6502를 시뮬레이트할 수 있는 프로그램 [POBS](https://github.com/POCU/COMP2300StarterPack/releases) 를 제공한다.
 		- LED, 논리게이트, CPU, ROM, RAM 등의 부품을 브레드보드에 꼽고 와이어로 연결하여 완성한다.
-		- ![](https://github.com/jubin-park/blog.jubinpark.com/tree/main/post/2026/04/25/assets/pobs.png)
+		- ![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//pobs.png)
 		- 내가 만든 컴퓨터로 실제로 6502 어셈블리 코드를 작성하고 ROM에 플래시하여 실행할 수 있다.
 		- POBS에서 각종 레지스터와 메모리 값을 명령어 step 단위로 디버깅할 수 있는 기능이 제공된다.
 		- [POCU 아카데미 카카오톡 오픈 채팅방](https://open.kakao.com/o/pH8f3i8h)에 입장하면, 6502 컴퓨터 부품에 대한 정보를 얻거나 중고 구매를 하거나 운이 좋다면 나눔을 받을 수 있는 것으로 알고 있다. 조립을 실제로 원한다면 입장하여 정보를 얻는 게 좋을 것이다.
@@ -78,7 +78,7 @@
 	- 이제부터는 **갓난아기**를 벗어났기 때문에, 강사님은 추가적인 명령어가 이런 게 있다 정도로 알려주고, 자세한 사항은 직접 찾아봐야 한다. 
 		- **강사님은 음식 재료들을 제공하고, 레시피는 우리가 직접 찾고 요리를 만들어 먹는다**는 것에 굳이 비유를 하면 되겠다.
 	- FPU 프로그래밍과 x87 명령어를 학습한다. 80비트 확장 부동소수점을 내부적으로 사용한다는 사실이 나에게 신선한 충격을 안겨다주었다.
-	- ![](https://github.com/jubin-park/blog.jubinpark.com/tree/main/post/2026/04/25/assets/buildbot_cv.png)
+	- ![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//buildbot_cv.png)
 	- MS-DOS와 친숙해지는 계기가 된다. 어셈블리 코드를 ML(Microsoft Macro Assembler)로 빌드하고, CV(CodeView)로 레지스터 및 메모리 디버깅을 할 수 있다.
 	- 인터럽트 개념을 배우고, MSDOS, BIOS 서비스를 직접 사용하는 경험을 얻을 수 있다.
 3. 후반부 (x86 32/64비트 시대, 벡터 연산)
@@ -90,7 +90,7 @@
 ---
 ### 어셈블리 언어요? 외계어 같고, 관심도 없었고, 아예 몰랐어요
 
-![](https://github.com/jubin-park/blog.jubinpark.com/tree/main/post/2026/04/25/assets/binary_world.jpg)
+![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//binary_world.jpg)
 
 *(DDP 워너브라더스 100주년 특별전 - 영화 매트릭스 존에서)*
 
@@ -107,7 +107,7 @@
 
 그때 나는 회사일을 핑계삼아 온라인 강의를 미뤄서 보고, [POBS](https://github.com/POCU/COMP2300StarterPack/releases)으로 전선을 하나하나 연결하는 데에 전념했다. 겨우 실습 과제를 따라왔지만, 중간고사 준비를 어영부영 했었다. 뻔하게도 결과는 처참했다. 이후 수강 포기도 신청하지 않은 채 완전히 손을 떼고 FAILED와 함께 종강했다. COMP3500 이후로 두 번째 FAILED이라 그런지 좌절감을 많이 느꼈다. 회사 다니면서 공부하는 건 나에겐 과욕이었고, 시간 부족 및 능력 한계였다고 본다.
 
-![](https://github.com/jubin-park/blog.jubinpark.com/tree/main/post/2026/04/25/assets/202309_total_score.png)
+![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//202309_total_score.png)
 
 ### Hello Asm! (3rd Tried)
 
@@ -115,8 +115,8 @@
 
 그러나 언제까지 이렇게 살 수는 없었다. 스스로 잡아먹히고 있는 이 상황을 벗어나고 싶었다. 새해 2026년을 맞이한 기념으로 내가 하고 싶었지만 이루지 못한 것들 중, COMP2300 이 문득 눈에 들어왔다. 지금 나는 백수니 시간도 많을테니까 해낼 수 있을거라 믿었다. 물론 그러면서도 겁이 나고 무서웠다. 자신을 믿지 못했다. 지금 와서야 어찌저찌 잘 해낸 걸 보면 조금은 자신감을 얻었지만 말이다. 또한 새해에 운동을 시작하면서 작년보다 건강도 많이 좋아졌다.
 
-![](https://github.com/jubin-park/blog.jubinpark.com/tree/main/post/2026/04/25/assets/202601_scores.png)
-![](https://github.com/jubin-park/blog.jubinpark.com/tree/main/post/2026/04/25/assets/202601_achievement.png)
+![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//202601_scores.png)
+![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//202601_achievement.png)
 
 ---
 ### 그래서 이거 배워서 뭐 할건데요?
@@ -131,11 +131,11 @@
 
 어셈블리어와 관련은 거의 없지만, 종종 재미로 특정 파일의 헤더들을 가볍게 탐색해보곤 한다.
 
-![](https://github.com/jubin-park/blog.jubinpark.com/tree/main/post/2026/04/25/assets/exif_header.png)
+![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//exif_header.png)
 
 * 최근에 JPG 사진 파일에 EXIF(Exchangeable Image File Format)라는 메타데이터 헤더의 유무를 비교해보곤 했다. 자세히 알아본 건 아니지만, 첫 헤더에 **Exif** 라는 마크 스트링이 들어가고 그 뒤에는 알 수 없는 데이터들과 일부 날짜 문자열이 들어가는 데이터들을 확인했다.
 
-![](https://github.com/jubin-park/blog.jubinpark.com/tree/main/post/2026/04/25/assets/imhex.png)
+![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//imhex.png)
 
 * [이전에 쓴 포스트](https://www.jubinpark.com/2025/06/jsf.html)에 올리기도 했지만, 자체 포맷의 경우 (ex: 오래된 게임 리소스 파일), 헤더를 하나씩 내 나름대로 추측하면서 리소스를 추출하는 작업을 했었다. 완전하게 해석은 못하지만, 일부는 리소스 파일 구조가 어떻게 되는지 보면서 소소한 궁금증을 해결하기도 한다.
 
