@@ -1,26 +1,23 @@
 # COMP2300 어셈블리 프로그래밍: 포큐 아카데미 재수강 후기
 ![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/04/25/assets//COMP2300.png)
 
-> 포큐 아카데미 2026년 1월 학기 COMP2300 어셈블리 프로그래밍 과목을 2번째 도전 후 작성하는 후기글입니다. 독백하듯 작성한 글이여서, 비격식체로 진행합니다. 정보 습득에 도움이 되시길 바랍니다.
+포큐 아카데미 2026년 1월 학기 COMP2300 어셈블리 프로그래밍 과목을 2번째 도전 후 작성하는 후기글입니다. 독백하듯 작성한 글이여서, 비격식체로 진행합니다. 정보 습득에 도움이 되시길 바랍니다.
+
 ### 저수준 프로그래밍, 수준 낮은 프로그래밍?
 
 저수준이라는 단어만 놓고 볼 때면, 문득 '하찮은 수준인가?' 같은 생각을 하곤 했다. 영어로 번역한 단어인 'low-level'을 봐도 저레벨, 쪼렙 같은 저급한 단어들로 생각이 든다. 반대로 고수준(high-level)이라고 하면, 고급적이고 세련된 느낌이 든다.
 
 위 단어들은 일상적이 아닌, 기술적인 용어로 보는 게 올바르다.
 
-> (원문)
-> 
-> **High-level** describe those operations that are more **abstract** and general in nature; wherein the overall goals and systemic features are typically more concerned with the wider, macro system as a whole.
-> 
-> **Low-level** describes more specific individual components of a systematic operation, focusing on **the details of rudimentary micro functions** rather than macro, complex processes. Low-level classification is typically more concerned with individual components within the system and how they operate.
->
-> (파파고 번역)
-> 
-> **High-level**은 본질적으로 더 **추상적**이고 일반적인 작업을 설명합니다. 여기서 전체 목표와 시스템적 특징은 일반적으로 더 넓은 거시 시스템 전체와 더 관련이 있습니다.
-> 
-> **Low-level**은 거시적이고 복잡한 프로세스보다는 **기본적인 미세 기능의 세부 사항**에 초점을 맞춘 체계적인 작업의 보다 구체적인 개별 구성 요소를 설명합니다. Low-level 분류는 일반적으로 시스템 내의 개별 구성 요소와 그 작동 방식에 더 중점을 둡니다.
-> 
-> 출처: [wikipedia](https://en.wikipedia.org/wiki/High-_and_low-level)
+(원문)
+* ***High-level** describe those operations that are more **abstract** and general in nature; wherein the overall goals and systemic features are typically more concerned with the wider, macro system as a whole.
+* ***Low-level** describes more specific individual components of a systematic operation, focusing on **the details of rudimentary micro functions** rather than macro, complex processes. Low-level classification is typically more concerned with individual components within the system and how they operate.
+
+(파파고 번역) 
+* ***High-level**은 본질적으로 더 **추상적**이고 일반적인 작업을 설명합니다. 여기서 전체 목표와 시스템적 특징은 일반적으로 더 넓은 거시 시스템 전체와 더 관련이 있습니다.
+* ***Low-level**은 거시적이고 복잡한 프로세스보다는 **기본적인 미세 기능의 세부 사항**에 초점을 맞춘 체계적인 작업의 보다 구체적인 개별 구성 요소를 설명합니다. Low-level 분류는 일반적으로 시스템 내의 개별 구성 요소와 그 작동 방식에 더 중점을 둡니다.
+
+출처: [wikipedia](https://en.wikipedia.org/wiki/High-_and_low-level)
 
 흔히 프로그래밍 언어에서, 저수준에 가까울 수록 기계가 이해하기 쉬운 쪽이고, 고수준에 가까울 수록 인간이 이해하기 쉽다고 표현한다. 어셈블리어는 저수준에 가깝지만 CPU가 바로 읽고 실행할 수 있는 건 아니고, 기계어로 변환된 것이 최종 저수준 언어의 상태라고 보면 되겠다.
 ### 선수과목
