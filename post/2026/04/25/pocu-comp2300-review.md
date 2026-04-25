@@ -10,12 +10,12 @@
 위 단어들은 일상적이 아닌, 기술적인 용어로 보는 게 올바르다.
 
 (원문)
-* ***High-level** describe those operations that are more **abstract** and general in nature; wherein the overall goals and systemic features are typically more concerned with the wider, macro system as a whole.
-* ***Low-level** describes more specific individual components of a systematic operation, focusing on **the details of rudimentary micro functions** rather than macro, complex processes. Low-level classification is typically more concerned with individual components within the system and how they operate.
+* **High-level** describe those operations that are more **abstract** and general in nature; wherein the overall goals and systemic features are typically more concerned with the wider, macro system as a whole.
+* **Low-level** describes more specific individual components of a systematic operation, focusing on **the details of rudimentary micro functions** rather than macro, complex processes. Low-level classification is typically more concerned with individual components within the system and how they operate.
 
 (파파고 번역) 
-* ***High-level**은 본질적으로 더 **추상적**이고 일반적인 작업을 설명합니다. 여기서 전체 목표와 시스템적 특징은 일반적으로 더 넓은 거시 시스템 전체와 더 관련이 있습니다.
-* ***Low-level**은 거시적이고 복잡한 프로세스보다는 **기본적인 미세 기능의 세부 사항**에 초점을 맞춘 체계적인 작업의 보다 구체적인 개별 구성 요소를 설명합니다. Low-level 분류는 일반적으로 시스템 내의 개별 구성 요소와 그 작동 방식에 더 중점을 둡니다.
+* **High-level**은 본질적으로 더 **추상적**이고 일반적인 작업을 설명합니다. 여기서 전체 목표와 시스템적 특징은 일반적으로 더 넓은 거시 시스템 전체와 더 관련이 있습니다.
+* **Low-level**은 거시적이고 복잡한 프로세스보다는 **기본적인 미세 기능의 세부 사항**에 초점을 맞춘 체계적인 작업의 보다 구체적인 개별 구성 요소를 설명합니다. Low-level 분류는 일반적으로 시스템 내의 개별 구성 요소와 그 작동 방식에 더 중점을 둡니다.
 
 출처: [wikipedia](https://en.wikipedia.org/wiki/High-_and_low-level)
 
