@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "assets",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -184,10 +185,12 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "85a7c6f76ef31f0b",
+  "active": "a20e38ec0de9a730",
   "lastOpenFiles": [
-    "Untitled.canvas",
+    "post/2026/04/25/pocu-comp2300-review.md",
+    "post/2026/04/25/assets/buildbot_cv.png",
     "post/2026/05/13/surface-duo-review.md",
+    "Untitled.canvas",
     "post/2026/05/13/assets/surface_duo2.png",
     "post/2026/05/13/assets/surface_duo1.png",
     "post/2026/05/13/assets/Screenshot 2026-05-13 at 15.55.56.png",
@@ -197,7 +200,6 @@
     "post/2026/05/13/assets/gboard_dual.png",
     "post/2026/05/13/assets/gboard_single.png",
     "post/2026/05/13/assets/screen_lock.png",
-    "post/2026/05/13/assets/duo_de_features.png",
     "post/2026/05/13/assets",
     "post/2026/05/13/03-25-59.md",
     "Untitled 1.canvas",
@@ -205,7 +207,6 @@
     "Untitled 1.base",
     "post/2026/05/13",
     "post/2026/05",
-    "post/2026/04/25/pocu-comp2300-review.md",
     "blog.jubinpark.com/COMP2300 어셈블리 프로그래밍: 포큐 아카데미 재수강 후기.md",
     "blog.jubinpark.com",
     "blog.jubinpark.com/pocu-comp2300-review.md.md",

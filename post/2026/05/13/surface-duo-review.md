@@ -1,4 +1,4 @@
-![](assets/surface_duo1.png)
+![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/05/13/assets/surface_duo1.png)
 
 # 서피스듀오 리뷰
 어느 날 폴더블폰 아이쇼핑을 하다가 서피스 듀오라는, 듀얼 스크린 폰의 존재를 발견했다.
@@ -34,36 +34,36 @@ https://github.com/Archfx/duo-de/releases/tag/v2025.06.26 를 사용했다.
 	- 이 방식은 기존 서피스 듀오의 경험을 훼손시키며 복잡하게 만든다.
 4. 지문인식 지원 불가 (핀, 비밀번호, 페이스 인식만 지원)
     - 페이스 인식은 커스텀 롬에서만 지원하는 기능 
-	![](assets/screen_lock.png)
+	![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/05/13/assets/screen_lock.png)
 5. Play Integrity 문제 발생(왓츠앱, ChatGPT, 당근 등 사용 불가)
 	- ChatGPT 
-	![](assets/play_integrity_error1.png)
+	![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/05/13/assets/play_integrity_error1.png)
 	- WhatsApp
-	![](assets/play_integrity_error2.png)
+	![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/05/13/assets/play_integrity_error2.png)
 	- 당근
-	![](assets/play_integrity_error3.png)
+	![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/05/13/assets/play_integrity_error3.png)
 6. USIM 인식 불가
 7. 런쳐 하단 독 버그(펼침모드에서 런쳐 앱을 6개, 폰모드에서는 5개밖에 사용 못 함, 가끔 독이 안 보이기도 함)
 	a. 펼침모드에서 독 앱 6개 표시 (정상)
-	![](assets/dock_bug1.png)
+	![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/05/13/assets/dock_bug1.png)
 	
 	b. 싱글모드에서 독 앱 6개 표시 (정상)
-	![](assets/dock_bug2.png)
+	![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/05/13/assets/dock_bug2.png)
 	
 	c. 펼침모드에서 독이 보이지 않는 버그
-	![](assets/dock_bug3.png)
+	![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/05/13/assets/dock_bug3.png)
 
 8. 홈에서 App Info를 누르면 팅기는 현상
-	![](assets/quick_step_error.png)
+	![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/05/13/assets/quick_step_error.png)
 ### 장점
 1. 체감상 아주 약간 빠릿하게 도는 느낌이 있다. 그저 기분탓일수도 있다.
 2. Disable Hinge Gap 기능 지원 (힌지 부분 가려짐 방지 기능)
-	![](assets/duo_de_features.png)
+	![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/05/13/assets/duo_de_features.png)
 3. Gboard 키보드가 화면 상태에 따라 변함
 	- 듀얼모드에서의 Gboard 상태
-	![](assets/gboard_dual.png)
+	![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/05/13/assets/gboard_dual.png)
 	- 싱글모드에서의 Gboard 상태
-	![](assets/gboard_single.png)
+	![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/05/13/assets/gboard_single.png)
 
 
 다른 건 몰라도 단점 1, 2번이 너무 사람을 힘들게 했기에, 2~3주 정도 사용하다가 다시 순정 롬으로 돌아왔다.
@@ -76,7 +76,7 @@ Surface Duo 기기에서 윈도우11 (ARM)을 올릴 수 있게 해주는 비공
 
 특히 듀얼 부팅이 가능하다. 기기를 펼친 상태로 전원을 키면 안드로이드로 부팅하고, 접은 상태로 전원을 키면 윈도우로 부팅한다.
 
-![](assets/surface_duo2.png)
+![](https://raw.githubusercontent.com/jubin-park/blog.jubinpark.com/refs/heads/main/post/2026/05/13/assets/surface_duo2.png)
 ### 단점
 1. 스피커, 이어폰 모두 사운드가 들리지 않음
 2. 블루투스 연결이 실패됨
