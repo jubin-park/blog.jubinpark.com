@@ -21,16 +21,22 @@
 # Wise 카드
 [Wise](https://play.google.com/store/apps/details?id=com.transferwise.android) 앱을 설치하고 비실물 카드를 하나 만들었습니다. **20 파운드**를 자신의 Wise 계좌에 넣으면 발급 신청이 가능합니다. 다행히도 신청 비용이 들진 않았습니다. 하지만 결제할 때마다 수수료는 들지만요. 신청 방법은 구글에 검색하면 정보를 얻을 수 있습니다.
 
+![](https://blogger.googleusercontent.com/img/a/AVvXsEhGXOmOEeHb4kcxlzGg3E5wBsJvW7CP9KuyAUqVJjGFZNDkHXat6E4Ed-fse70KzZmc0uTjt5sAgjxsHi-2GgmR_WXUvv0IXll8mZ-zcdsN7Uv9o8b5vLsGpRjTcsw10mUI_G6qkVRMboVjB3_LeGCZMriWQdX-2M1OE1g2_PtRY1KpKLje0W4dTUi_za5V)
+
 # 가민페이
 가민 시계를 사용하는 분들은 아시겠지만, 시계 설정을 위해서는 **[Garmin Connect** ](https://play.google.com/store/apps/details?id=com.garmin.android.apps.connectmobile)앱이 필요합니다.
 그 앱의 **Settings** - **Wallet & Garmin Pay** 라는 메뉴에서 카드를 등록할 수 있습니다.
 참고로 태국의 [래빗 카드](https://en.wikipedia.org/wiki/Rabbit_Card)라는 것도 등록할 수 있더군요. 그건 잘 모르겠고, 제 Wise 카드를 등록했습니다.
+
+![](https://blogger.googleusercontent.com/img/a/AVvXsEjJ2Vlz29LQ1Nl-4rIFHGQzmdkxbeD81yWbM3XQbuS60RBkz7z-Wv9ZV9nW_0-dXJ6dCKeneILN8IYLxAwQcpVHOfbLhWF5tzxbW3792ef2YfckLtOQdR4ym_KN6qGabQ7BQlRS8opDGmwz_oGVJP_clNRiqx1u6f8VjXc2MD-gOwCBuCa13F37Mj2Em3Nf)
 
 그러면 결제 비밀번호 4자리를 새로 만들라고 합니다. 시계에서 결제 기능을 사용하기 전 입력하는 패스코드입니다. 결제 때마다 항상 입력하는 건 아니고, 시간이 어느 정도 지나야만 패스코드 입력 창이 다시 나타납니다. 그 시간 주기는 모르겠어요.
 
 편의점에 들어갑니다. 미리 가민 시계로 결제 준비를 마칩니다. 간식을 카운터에 들고 갑니다. '이게 정말 될까?' 하면서 괜히 긴장이 됩니다. 혹여나 실패할까 2차 결제 수단도 미리 준비합니다. 기대감과 함께 시계를 찬 손목을 단말기에 올립니다.
 
 마침내 3100원 첫 결제에 성공했습니다. 가격 1.64 파운드, 수수료 0.01 파운드가 발생했습니다. 1 파운드 = 1905.83원인 시점에 결제가 됐네요.
+
+![](https://blogger.googleusercontent.com/img/a/AVvXsEgnDnBGy9XNK1LfCuv4pt1FHnBrT0scYT4FiDVSMT7PiL3H_0KXCMUgUcKEBf2aN8jphGH1cNUbPf66ziplbMKqWptEsjfpGMznMqdTeO0okHLJBAIHeB0CvF8bzIKs009pYg0j5MeD81grFv6OfmDmxQTmmHXGHWab_UpuT-9X2NY4N15a8v9zupae7AcX)
 
 # 구글페이
 [**Google Wallet**](https://play.google.com/store/apps/details?id=com.google.android.apps.walletnfcrel)앱을 설치하는 것부터가 관건이었습니다.
@@ -48,6 +54,10 @@ Play Store에서 일본 프로필 구글 계정으로 전환했더니 설치할 
 3. ✅ MEETS_STRONG_INTEGRITY
 
 성공적으로 구글월렛의 카드 등록도 성공했습니다. 이후 루팅을 감지해서 뻗어버리는 어플들 때문에 루팅을 해제했습니다. 이 상태로 편의점에 결제하러 갔습니다.
+
+![](https://blogger.googleusercontent.com/img/a/AVvXsEhX56F_nf9C29HVgdYx7CVAb9QEvC7Bpf6qO7MwOUfTK1-qI-OJgUp3oGrU-bT-gO87NMDIwOjp764R6lTAfUY6fAVQHks6cau1auInyxsmd85pMjYB5EHtOm0eZmDaAbGhMBkGbWUK49gqg3bcDQhPWcFaX4jgHfMwCwxp1X_Ss0MpeaPBTKgVzzkzjk0z)
+
+![](https://blogger.googleusercontent.com/img/a/AVvXsEgkbOQGsO5IQsdGrvnREyG6RuLcbR0jYQAeL0QRSfHDzRDHOveq1PW8_EUV8H2tfnzifAxYuCw3Ly15hShfItj9SqozX3zs6rfahT05hmYF2qEfY0B-X4no5h3j-3CIG9XVs6PP5ZFFWrq6LhKnx_pOdWSEIu7LLyucvNajX4J_y3YbhKRzkH44NWcaouAb)
 
 결제가 잘 됐습니다.
 
