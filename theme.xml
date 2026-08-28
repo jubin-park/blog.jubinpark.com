@@ -2115,7 +2115,8 @@ margin-top:24px
 body.item-view .Blog .post-header-container{
 padding-$startSide:140px
 }
-body.page-view .post-title,
+
+/* Hide author and date on Blogger Pages only. Regular posts remain unchanged. */
 body.page-view .post-author,
 body.page-view .post-timestamp,
 body.page-view .post-author-profile-pic-container{
@@ -3023,7 +3024,69 @@ margin-$endSide:inherit;
 }
 body.item-view .Blog .post-body::first-line{
 color:inherit;
-}]]></b:skin>
+}
+/* Page only: hide title/byline/date and remove only the vertical spacing */
+body.page-view .Blog .post-title-container,
+body.page-view .Blog .post-header-container {
+display:none !important;
+margin:0 !important;
+padding:0 !important;
+height:0 !important;
+min-height:0 !important;
+}
+
+body.page-view .post-title,
+body.page-view .post-title a,
+body.page-view .post-author,
+body.page-view .post-timestamp,
+body.page-view .post-author-profile-pic-container {
+display:none !important;
+}
+
+/* Desktop: use exactly the same horizontal alignment as the theme's normal single-post body */
+body.page-view .Blog .post-body-container {
+position:relative !important;
+margin-top:0 !important;
+margin-bottom:32px !important;
+margin-left:140px !important;
+margin-right:0 !important;
+padding-top:0 !important;
+padding-bottom:0 !important;
+padding-left:0 !important;
+padding-right:290px !important;
+}
+
+body.page-view .Blog .post-body {
+margin-top:0 !important;
+margin-bottom:0 !important;
+margin-right:110px !important;
+}
+
+body.page-view .Blog .post-content {
+margin-top:0 !important;
+margin-bottom:0 !important;
+}
+
+@media screen and (max-width:968px) {
+/* Mobile: same 24px left/right alignment as normal single-post pages */
+body.page-view .Blog .post-body-container {
+position:relative !important;
+margin:0 24px 32px 24px !important;
+padding:0 !important;
+}
+
+body.page-view .Blog .post-body {
+margin:0 !important;
+padding:0 !important;
+}
+
+body.page-view .Blog .post-content {
+margin:0 !important;
+padding:0 !important;
+}
+}
+
+]]></b:skin>
 
     <b:template-skin>
       <![CDATA[
