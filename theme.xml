@@ -3309,7 +3309,7 @@ color:inherit;
         <b:includable id='postShareButtons'>
           <b:include cond='data:view.isMultipleItems or data:widget.type != &quot;Blog&quot;' name='super.postShareButtons'/>
         </b:includable>
-        <b:includable id='postJumpLink' var='post'></b:includable>
+        <b:includable id='postJumpLink' var='post'/>
         <b:includable id='sharingButtonContent'>
           <b:comment>Mark parent byline element as a flat-button.</b:comment>
           <b:class name='flat-button ripple'/>
@@ -3376,7 +3376,9 @@ color:inherit;
         <b:includable id='title'>
           <div>
             <b:class cond='data:this.imagePlacement == &quot;REPLACE&quot;' name='replaced'/>
-            <b:include name='super.title'/>
+            <a expr:href='data:blog.homepageUrl'>
+              <b:include name='super.title'/>
+            </a>
           </div>
         </b:includable>
       </b:defaultmarkup>
@@ -3543,7 +3545,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     <b:includable id='title'>
           <div>
             <b:class cond='data:this.imagePlacement == &quot;REPLACE&quot;' name='replaced'/>
-            <b:include name='super.title'/>
+            <a expr:href='data:blog.homepageUrl'>
+              <b:include name='super.title'/>
+            </a>
           </div>
         </b:includable>
                   </b:widget>
@@ -3555,7 +3559,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <b:section class='centered-top-secondline' id='page_list_top' name='Page List (Top)' showaddelement='false'>
                   <b:widget id='PageList1' locked='true' title='' type='PageList' version='2' visible='true'>
                     <b:widget-settings>
-                      <b:widget-setting name='pageListJson'><![CDATA[{"link0":{"href":"http://gravatar.com/jubinpark0","position":0,"title":"Gravatar"}}]]></b:widget-setting>
+                      <b:widget-setting name='pageListJson'><![CDATA[{"6860670083725613284":{"href":"https://www.jubinpark.com/p/about.html","position":0,"title":"주인"}}]]></b:widget-setting>
                       <b:widget-setting name='homeTitle'>홈</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main'>
@@ -3825,7 +3829,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <b:include cond='data:view.isSingleItem and data:widget.type == &quot;Blog&quot;' data='{ shareButtonClass: &quot;post-share-buttons-bottom&quot;, overridden: true }' name='maybeAddShareButtons'/>
           </div>
         </b:includable>
-                      <b:includable id='postJumpLink' var='post'></b:includable>
+                      <b:includable id='postJumpLink' var='post'/>
                       <b:includable id='postLabels'>
   <span class='byline post-labels'>
     <span class='byline-label'><data:byline.label/></span>
@@ -4351,7 +4355,7 @@ document.addEventListener('DOMContentLoaded', function() {
                       <b:includable id='postHeader' var='post'>
   <b:include name='headerByline'/>
 </b:includable>
-                      <b:includable id='postJumpLink' var='post'></b:includable>
+                      <b:includable id='postJumpLink' var='post'/>
                       <b:includable id='postLabels'>
   <span class='byline post-labels'>
     <span class='byline-label'><data:byline.label/></span>
@@ -4570,7 +4574,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <!-- LINT.ThenChange(//depot/google3/java/com/google/blogger/b2/layouts/widgets/v2-style.css) -->
 </b:includable>
                     </b:widget>
-                    <b:widget cond='data:view.isSingleItem and data:posts any (p =&gt; p.id != data:view.postId)' id='PopularPosts1' locked='true' title='' type='PopularPosts' version='2' visible='true'>
+                    <b:widget cond='data:view.isSingleItem and data:posts any (p =&gt; p.id != data:view.postId)' id='PopularPosts1' locked='true' title='' type='PopularPosts' version='2' visible='false'>
                       <b:widget-settings>
                         <b:widget-setting name='numItemsToShow'>3</b:widget-setting>
                         <b:widget-setting name='showThumbnails'>true</b:widget-setting>
@@ -4708,7 +4712,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <b:include cond='data:view.isSingleItem and data:widget.type == &quot;Blog&quot;' data='{ shareButtonClass: &quot;post-share-buttons-bottom&quot;, overridden: true }' name='maybeAddShareButtons'/>
           </div>
         </b:includable>
-                      <b:includable id='postJumpLink' var='post'></b:includable>
+                      <b:includable id='postJumpLink' var='post'/>
                       <b:includable id='postLabels'>
   <span class='byline post-labels'>
     <span class='byline-label'><data:byline.label/></span>
@@ -4835,7 +4839,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <b:include data='{ button: true, iconClass: &quot;sidebar-back flat-icon-button ripple&quot; }' name='forwardArrowIcon'/>
           </div>
           <b:section class='sidebar' id='sidebar' name='Sidebar' preferred='yes'>
-            <b:widget id='BlogArchive1' locked='false' title='게시글' type='BlogArchive' visible='true'>
+            <b:widget id='BlogArchive1' locked='false' title='게시글' type='BlogArchive' version='2' visible='true'>
               <b:widget-settings>
                 <b:widget-setting name='showStyle'>MENU</b:widget-setting>
                 <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
@@ -4901,7 +4905,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </ul>
 </b:includable>
             </b:widget>
-            <b:widget id='Label1' locked='false' title='태그' type='Label' visible='true'>
+            <b:widget id='Label1' locked='false' title='태그' type='Label' version='2' visible='true'>
               <b:widget-settings>
                 <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
                 <b:widget-setting name='display'>LIST</b:widget-setting>
