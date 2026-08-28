@@ -3936,7 +3936,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <b:widget-setting name='showCommentLink'>true</b:widget-setting>
                         <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
                         <b:widget-setting name='postLocationLabel'>Location:</b:widget-setting>
-                        <b:widget-setting name='showAuthor'>false</b:widget-setting>
+                        <b:widget-setting name='showAuthor'>true</b:widget-setting>
                         <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
                         <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
                         <b:widget-setting name='showLabels'>true</b:widget-setting>
