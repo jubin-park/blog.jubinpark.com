@@ -3449,7 +3449,25 @@ color:inherit;
     <script async='async' src='https://www.gstatic.com/external_hosted/clipboardjs/clipboard.min.js'/>
     
     <link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css' rel='stylesheet'/>
-  </head>
+  
+<script type='text/javascript'>
+//<![CDATA[
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.korean-post-date').forEach(function(el) {
+    var raw = el.getAttribute('data-date');
+    if (!raw) return;
+
+    var date = new Date(raw);
+    if (isNaN(date.getTime())) return;
+
+    el.textContent = date.getFullYear() + '-' +
+      String(date.getMonth() + 1).padStart(2, '0') + '-' +
+      String(date.getDate()).padStart(2, '0');
+  });
+});
+//]]>
+</script>
+</head>
 
   <body class='container'>
     <b:class cond='data:view.isPreview' name='preview'/>
@@ -3835,7 +3853,7 @@ color:inherit;
       <meta expr:content='data:post.url.canonical'/>
       <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'>
         <time class='published' expr:datetime='data:post.date.iso8601' expr:title='data:post.date.iso8601'>
-          <data:post.date/>
+          <span class='korean-post-date' expr:data-date='data:post.date.iso8601'><data:post.date/></span>
         </time>
       </a>
     </b:if>
@@ -4405,7 +4423,7 @@ color:inherit;
       <meta expr:content='data:post.url.canonical'/>
       <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'>
         <time class='published' expr:datetime='data:post.date.iso8601' expr:title='data:post.date.iso8601'>
-          <data:post.date/>
+          <span class='korean-post-date' expr:data-date='data:post.date.iso8601'><data:post.date/></span>
         </time>
       </a>
     </b:if>
@@ -4734,7 +4752,7 @@ color:inherit;
       <meta expr:content='data:post.url.canonical'/>
       <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'>
         <time class='published' expr:datetime='data:post.date.iso8601' expr:title='data:post.date.iso8601'>
-          <data:post.date/>
+          <span class='korean-post-date' expr:data-date='data:post.date.iso8601'><data:post.date/></span>
         </time>
       </a>
     </b:if>
