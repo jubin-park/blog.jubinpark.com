@@ -82,7 +82,7 @@
 <Group description="Header" selector=".centered-top-container">
   <Variable name="header.background" description="Header Background" color="$(header.background.color)" type="background" default="$(color) none repeat scroll top left"  value="$(color) none repeat scroll top left"/>
   <Variable name="header.background.color" description="Background color" type="color" default="#fff"  value="transparent"/>
-  <Variable name="header.description.font" description="Description font" type="font" default="$(openSansNormal14)"  value="italic normal 16px Open Sans, sans-serif"/>
+  <Variable name="header.description.font" description="Description font" type="font" default="$(openSansNormal14)"  value="normal normal 16px Open Sans, sans-serif"/>
   <Variable name="header.description.color" description="Description Color" type="color" default="rgba(0,0,0,0.54)"  value="#737373"/>
   <Variable name="header.pages.color" description="Page list color" type="color" default="#25a186"  value="#25a186"/>
   <Variable name="header.pages.selected.color" description="Page list color (selected page)" type="color" default="$(header.pages.color)"  value="#1f806c"/>
@@ -347,12 +347,19 @@ vertical-align:bottom
 .Attribution .blogger img{
 margin-$endSide:.5em
 }
+.Attribution .blogger{
+display:none
+}
 .Attribution div{
 line-height:24px;
 margin-top:.5em
 }
-.Attribution .copyright,.Attribution .image-attribution{
+.Attribution .image-attribution{
 font-size:.7em;
+margin-top:1.5em
+}
+.Attribution .copyright{
+font-size:1em;
 margin-top:1.5em
 }
 .BLOG_mobile_video_class{
@@ -1416,7 +1423,8 @@ width:100%
 -webkit-box-flex:0;
 -webkit-flex:0 0 auto;
 -ms-flex:0 0 auto;
-flex:0 0 auto
+flex:0 0 auto;
+border-bottom:1px solid rgba(0,0,0,.12)
 }
 .centered-top,.centered-top-placeholder{
 box-sizing:border-box;
@@ -1426,7 +1434,7 @@ width:100%
 box-sizing:border-box;
 margin:0 auto;
 max-width:$(feed.width);
-padding:44px 136px 32px 136px;
+padding:44px 136px 16px 136px;
 width:100%
 }
 .centered-top h3{
@@ -1620,7 +1628,6 @@ text-transform:uppercase
 }
 .widget.Header .header-widget p{
 font:$(header.description.font);
-font-style:italic;
 color:$(header.description.color);
 line-height:1.6;
 max-width:$(feed.width - 604px)
@@ -1977,10 +1984,10 @@ body.item-view .Blog .post-title-container{
 background-color:$(item.title.background.color);
 box-sizing:border-box;
 margin-bottom:-1px;
-padding-bottom:40px;
+padding-bottom:8px;
 padding-$endSide:290px;
 padding-$startSide:140px;
-padding-top:80px;
+padding-top:24px;
 width:100%
 }
 body.item-view .Blog .post-title,body.item-view .Blog .post-title a{
@@ -2573,7 +2580,7 @@ display:table-cell
 }
 @media screen and (max-width:1168px){
 .centered-top-container,.centered-top-placeholder{
-padding:24px 24px 32px 24px
+padding:24px 24px 16px 24px
 }
 .sticky{
 padding:0 24px
@@ -2634,7 +2641,7 @@ margin-left:calc((100% - 920px)/ 2);
 margin-right:calc((100% - 920px)/ 2)
 }
 body.item-view .Blog .post-title-container{
-padding:40px calc((100% - 920px)/ 2) 20px
+padding:12px calc((100% - 920px)/ 2) 8px
 }
 body.item-view .Blog .post-header-container{
 padding-$startSide:calc((100% - 920px)/ 2)
@@ -2721,7 +2728,7 @@ width:100%;
 height:calc((100vw - 48px) * 2 / 3)
 }
 body.item-view .Blog .post-title-container{
-padding:40px 24px 20px 24px
+padding:12px 24px 8px 24px
 }
 body.item-view .Blog .post-header-container{
 padding-$startSide:24px
@@ -2867,7 +2874,7 @@ float:left
 }
 .centered-top{
 max-width:$(feed.width + sidebar.width);
-padding:44px $(sidebar.width + 136px) 32px 136px
+padding:44px $(sidebar.width + 136px) 16px 136px
 }
 .sidebar-container{
 box-shadow:none;
@@ -3499,7 +3506,7 @@ color:inherit;
     <b:class cond='data:overflow' name='overflowable-item'/>
     <b:class cond='data:link.isCurrentPage' name='selected'/>
 
-    <a expr:href='data:link.href'><data:link.title/></a>
+    <a expr:href='data:link.href' target='_blank'><data:link.title/></a>
   </li>
 </b:includable>
                 <b:includable id='pageList'>
