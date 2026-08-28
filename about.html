@@ -611,6 +611,7 @@ Unable to load Gravatar profile.
       *
       * Blogger
       * Discord
+      * Instagram
       * Portfolio
       * Website
       * 기타
@@ -658,6 +659,19 @@ Unable to load Gravatar profile.
             
             iconUrl =
             "https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png";
+            
+          /*
+          * Instagram 문자열이 포함된 경우
+          * Google Favicon API를 사용하여 안정적으로 로드
+          */
+          } else if (
+          labelLower.indexOf("instagram") !== -1 ||
+          urlLower.indexOf("instagram") !== -1 ||
+          urlLower.indexOf("instagr.am") !== -1
+          ) {
+            
+            iconUrl =
+            "https://www.google.com/s2/favicons?domain=instagram.com&sz=64";
             
           }
           
