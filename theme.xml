@@ -95,7 +95,7 @@
 </Group>
 
 <Group description="Feed" selector=".widget.Blog">
-  <Variable name="feed.title.font" description="Post title font" type="font" default="$(openSansBold36)"  value="normal bold 24px Open Sans, sans-serif"/>
+  <Variable name="feed.title.font" description="Post title font" type="font" default="$(openSansBold36)"  value="normal normal 32px Open Sans, sans-serif"/>
   <Variable name="feed.title.color" description="Post title color" type="color" default="#25a186"  value="#1c1c1c"/>
   <Variable name="feed.subtitle.font" description="Post subtitle font" type="font" default="$(openSansSemibold16)"  value="normal normal 16px Open Sans, sans-serif"/>
   <Variable name="feed.subtitle.color" description="Post subtitle color" type="color" default="rgba(0,0,0,0.54)"  value="rgba(0,0,0,0.537)"/>
@@ -129,7 +129,7 @@
 </Group>
 
 <Group description="Individual Post or Page" selector="body.item-page .widget.Blog">
-  <Variable name="item.title.font" description="Font" type="font" default="$(openSansSemibold48)"  value="normal 600 32px Open Sans, sans-serif"/>
+  <Variable name="item.title.font" description="Font" type="font" default="$(openSansSemibold48)"  value="normal normal 32px Open Sans, sans-serif"/>
   <Variable name="item.title.color" description="Post title color" type="color" default="#fff"  value="#1c1c1c"/>
   <Variable name="item.title.background.color" description="Post title background color" type="color" default="#25a186"  value="transparent"/>
   <Variable name="item.subtitle.font" description="Post subtitle font" type="font" default="$(openSansSemibold16)"  value="normal 600 14px Open Sans, sans-serif"/>
@@ -1434,7 +1434,7 @@ width:100%
 box-sizing:border-box;
 margin:0 auto;
 max-width:$(feed.width);
-padding:44px 136px 16px 136px;
+padding:24px 136px;
 width:100%
 }
 .centered-top h3{
@@ -1445,6 +1445,10 @@ font:$(header.items.font)
 width:100%
 }
 .centered-top-firstline{
+-webkit-box-align:center;
+-webkit-align-items:center;
+-ms-flex-align:center;
+align-items:center;
 display:-webkit-box;
 display:-webkit-flex;
 display:-ms-flexbox;
@@ -1453,19 +1457,22 @@ position:relative;
 width:100%
 }
 .main_header_elements{
+-webkit-box-align:center;
+-webkit-align-items:center;
+-ms-flex-align:center;
+align-items:center;
 display:-webkit-box;
 display:-webkit-flex;
 display:-ms-flexbox;
 display:flex;
--webkit-box-flex:0;
--webkit-flex:0 1 auto;
--ms-flex:0 1 auto;
-flex:0 1 auto;
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto;
 -webkit-box-ordinal-group:2;
 -webkit-order:1;
 -ms-flex-order:1;
 order:1;
-overflow-x:hidden;
 width:100%
 }
 html[dir=rtl] .main_header_elements{
@@ -1481,10 +1488,10 @@ display:none
 max-width:100%
 }
 .blog-name{
--webkit-box-flex:1;
--webkit-flex:1 1 auto;
--ms-flex:1 1 auto;
-flex:1 1 auto;
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
 min-width:0;
 -webkit-box-ordinal-group:2;
 -webkit-order:1;
@@ -1492,6 +1499,25 @@ min-width:0;
 order:1;
 -webkit-transition:opacity .2s cubic-bezier(.4,0,.2,1);
 transition:opacity .2s cubic-bezier(.4,0,.2,1)
+}
+.header-navigation{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-align:center;
+-webkit-align-items:center;
+-ms-flex-align:center;
+align-items:center;
+margin-left:auto;
+-webkit-box-ordinal-group:3;
+-webkit-order:2;
+-ms-flex-order:2;
+order:2
+}
+html[dir=rtl] .header-navigation{
+margin-left:0;
+margin-right:auto
 }
 .subscribe-section-container{
 -webkit-box-flex:0;
@@ -1548,14 +1574,14 @@ float:right;
 height:$(blog.title.font.size)
 }
 .search-expand,.subscribe-section-container{
-margin-$startSide:44px
+margin-$startSide:20px
 }
 .hamburger-section{
--webkit-box-flex:1;
--webkit-flex:1 0 auto;
--ms-flex:1 0 auto;
-flex:1 0 auto;
-margin-left:44px;
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+margin-left:20px;
 -webkit-box-ordinal-group:3;
 -webkit-order:2;
 -ms-flex-order:2;
@@ -1579,16 +1605,39 @@ width:100%
 .search-focused .hamburger-section{
 visibility:visible
 }
+.centered-top-secondline{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-align:center;
+-webkit-align-items:center;
+-ms-flex-align:center;
+align-items:center
+}
 .centered-top-secondline .PageList ul{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-align:center;
+-webkit-align-items:center;
+-ms-flex-align:center;
+align-items:center;
 margin:0;
-max-height:$(header.items.font.size * 12 / 7 * 6 + 144px);
-overflow-y:hidden
+padding:0;
+list-style:none
 }
 .centered-top-secondline .PageList li{
-margin-$endSide:30px
+display:inline-flex;
+-webkit-box-align:center;
+-webkit-align-items:center;
+-ms-flex-align:center;
+align-items:center;
+margin-$endSide:8px
 }
 .centered-top-secondline .PageList li:first-child a{
-padding-$startSide:0
+padding-$startSide:8px
 }
 .centered-top-secondline .PageList .overflow-popup ul{
 overflow-y:auto
@@ -1692,8 +1741,8 @@ background:0 0
 .centered-top-secondline .PageList .overflow-button a,.centered-top-secondline .PageList li a{
 color:$(header.pages.color);
 font:$(header.items.font);
-line-height:$(header.items.font.size * 12 / 7 + 24px);
-padding:12px
+line-height:normal;
+padding:6px 10px
 }
 .centered-top-secondline .PageList li.selected a{
 color:$(header.pages.selected.color)
@@ -1802,10 +1851,17 @@ margin-$endSide:16px
 margin-top:0
 }
 body.feed-view .post-outer-container{
-margin-top:85px
+margin-top:48px
 }
 body.feed-view .feed-message+.post-outer-container,body.feed-view .post-outer-container:first-child{
 margin-top:24px
+}
+body.feed-view .post-outer-container:not(:first-child) .post-content{
+border-top:1px solid rgba(0,0,0,0.1);
+padding-top:48px
+}
+body.feed-view .post-outer-container:not(:first-child) .snippet-thumbnail{
+margin-top:48px
 }
 .post-outer{
 display:-webkit-box;
@@ -2590,16 +2646,16 @@ display:table-cell
 }
 @media screen and (max-width:1168px){
 .centered-top-container,.centered-top-placeholder{
-padding:24px 24px 16px 24px
+padding:24px
 }
 .sticky{
 padding:0 24px
 }
 .subscribe-section-container{
-margin-$startSide:48px
+margin-$startSide:24px
 }
 .hamburger-section{
-margin-left:48px
+margin-left:24px
 }
 .big-post-text-inner,.big-post-title-inner{
 margin:0 auto;
@@ -2626,6 +2682,17 @@ display:block
 .post-content{
 max-width:none;
 margin:0
+}
+body.feed-view .post-outer-container:not(:first-child){
+border-top:1px solid rgba(0,0,0,0.1);
+padding-top:48px
+}
+body.feed-view .post-outer-container:not(:first-child) .post-content{
+border-top:none;
+padding-top:0
+}
+body.feed-view .post-outer-container:not(:first-child) .snippet-thumbnail{
+margin-top:0
 }
 .post-outer .snippet-thumbnail{
 width:920px;
@@ -3418,6 +3485,63 @@ color:inherit;
                 </b:section>
               </div> <!-- End blog name and header -->
 
+              <!-- Page List (Top) Navigation -->
+              <nav class='header-navigation' role='navigation'>
+                <b:section class='centered-top-secondline' id='page_list_top' name='Page List (Top)' showaddelement='false'>
+                  <b:widget id='PageList1' locked='true' title='' type='PageList' visible='true'>
+                    <b:widget-settings>
+                      <b:widget-setting name='pageListJson'><![CDATA[{"link0":{"href":"http://gravatar.com/jubinpark0","position":0,"title":"Gravatar"}}]]></b:widget-setting>
+                      <b:widget-setting name='homeTitle'>홈</b:widget-setting>
+                    </b:widget-settings>
+                    <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <b:include name='content'/>
+</b:includable>
+                    <b:includable id='content'>
+          <div class='widget-content'>
+            <b:include cond='data:widget.sectionId == &quot;page_list_top&quot;' name='overflowablePageList'/>
+            <b:include cond='data:widget.sectionId != &quot;page_list_top&quot;' name='pageList'/>
+          </div>
+        </b:includable>
+                    <b:includable id='overflowButton'>
+          <a><data:messages.moreEllipsis/></a>
+        </b:includable>
+                    <b:includable id='overflowablePageList'>
+  <div class='overflowable-container'>
+    <div class='overflowable-contents'>
+      <div class='container'>
+        <b:with value='true' var='overflow'>
+        <b:with value='&quot;tabs&quot;' var='pageListClass'>
+          <b:include name='pageList'/>
+        </b:with>
+        </b:with>
+      </div>
+    </div>
+    <div class='overflow-button hidden'>
+      <b:include name='overflowButton'/>
+    </div>
+  </div>
+</b:includable>
+                    <b:includable id='pageLink'>
+  <li>
+    <b:class cond='data:overflow' name='overflowable-item'/>
+    <b:class cond='data:link.isCurrentPage' name='selected'/>
+
+    <a expr:href='data:link.href' target='_blank'><data:link.title/></a>
+  </li>
+</b:includable>
+                    <b:includable id='pageList'>
+  <ul>
+    <b:class cond='data:pageListClass' expr:name='data:pageListClass'/>
+    <b:loop values='data:links' var='link'>
+      <b:include name='pageLink'/>
+    </b:loop>
+  </ul>
+</b:includable>
+                  </b:widget>
+                </b:section>
+              </nav>
+
               <!-- Search -->
               <b:if cond='data:view.isLayoutMode or data:widgets any (w =&gt; w.sectionId == &quot;search_top&quot;)'>
                 <div class='search'>
@@ -3472,61 +3596,6 @@ color:inherit;
             </div>
             <!-- End hamburger menu -->
           </div>
-          <nav role='navigation'>
-            <b:section class='centered-top-secondline' id='page_list_top' name='Page List (Top)' showaddelement='false'>
-              <b:widget id='PageList1' locked='true' title='' type='PageList' visible='true'>
-                <b:widget-settings>
-                  <b:widget-setting name='pageListJson'><![CDATA[{"link0":{"href":"http://gravatar.com/jubinpark0","position":0,"title":"Gravatar"}}]]></b:widget-setting>
-                  <b:widget-setting name='homeTitle'>홈</b:widget-setting>
-                </b:widget-settings>
-                <b:includable id='main'>
-  <b:include name='widget-title'/>
-  <b:include name='content'/>
-</b:includable>
-                <b:includable id='content'>
-          <div class='widget-content'>
-            <b:include cond='data:widget.sectionId == &quot;page_list_top&quot;' name='overflowablePageList'/>
-            <b:include cond='data:widget.sectionId != &quot;page_list_top&quot;' name='pageList'/>
-          </div>
-        </b:includable>
-                <b:includable id='overflowButton'>
-          <a><data:messages.moreEllipsis/></a>
-        </b:includable>
-                <b:includable id='overflowablePageList'>
-  <div class='overflowable-container'>
-    <div class='overflowable-contents'>
-      <div class='container'>
-        <b:with value='true' var='overflow'>
-        <b:with value='&quot;tabs&quot;' var='pageListClass'>
-          <b:include name='pageList'/>
-        </b:with>
-        </b:with>
-      </div>
-    </div>
-    <div class='overflow-button hidden'>
-      <b:include name='overflowButton'/>
-    </div>
-  </div>
-</b:includable>
-                <b:includable id='pageLink'>
-  <li>
-    <b:class cond='data:overflow' name='overflowable-item'/>
-    <b:class cond='data:link.isCurrentPage' name='selected'/>
-
-    <a expr:href='data:link.href' target='_blank'><data:link.title/></a>
-  </li>
-</b:includable>
-                <b:includable id='pageList'>
-  <ul>
-    <b:class cond='data:pageListClass' expr:name='data:pageListClass'/>
-    <b:loop values='data:links' var='link'>
-      <b:include name='pageLink'/>
-    </b:loop>
-  </ul>
-</b:includable>
-              </b:widget>
-            </b:section>
-          </nav>
         </div>
       </header>
       <div class='main_content_container clearfix'>
