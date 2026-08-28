@@ -619,6 +619,7 @@ Unable to load Gravatar profile.
       * Discord
       * Instagram
       * Strava
+      * LeetCode
       * Portfolio
       * Website
       * 기타
@@ -689,6 +690,17 @@ Unable to load Gravatar profile.
             
             iconUrl =
             "https://www.google.com/s2/favicons?domain=strava.com&sz=64";
+            
+          /*
+          * LeetCode 문자열이 포함된 경우
+          */
+          } else if (
+          labelLower.indexOf("leetcode") !== -1 ||
+          urlLower.indexOf("leetcode") !== -1
+          ) {
+            
+            iconUrl =
+            "https://leetcode.com/favicon.ico";
             
           }
           
