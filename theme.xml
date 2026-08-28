@@ -1983,8 +1983,8 @@ margin:32px
 body.item-view .Blog .post-title-container{
 background-color:$(item.title.background.color);
 box-sizing:border-box;
-margin-bottom:-1px;
-padding-bottom:8px;
+margin-bottom:0;
+padding-bottom:16px;
 padding-$endSide:290px;
 padding-$startSide:140px;
 padding-top:24px;
@@ -2651,7 +2651,7 @@ margin-left:calc((100% - 920px)/ 2);
 margin-right:calc((100% - 920px)/ 2)
 }
 body.item-view .Blog .post-title-container{
-padding:24px calc((100% - 920px)/ 2) 8px
+padding:24px calc((100% - 920px)/ 2) 16px
 }
 body.item-view .Blog .post-header-container{
 padding-$startSide:calc((100% - 920px)/ 2)
@@ -2738,7 +2738,7 @@ width:100%;
 height:calc((100vw - 48px) * 2 / 3)
 }
 body.item-view .Blog .post-title-container{
-padding:24px 24px 8px 24px
+padding:24px 24px 16px 24px
 }
 body.item-view .Blog .post-header-container{
 padding-$startSide:24px
