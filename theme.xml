@@ -1712,11 +1712,12 @@ font:$(blog.title.font);
 line-height:$(blog.title.font.size);
 text-transform:uppercase
 }
-.widget.Header .header-widget p{
+ .widget.Header .header-widget p{
 font:$(header.description.font);
 color:$(header.description.color);
 line-height:1.6;
-max-width:$(feed.width - 604px)
+max-width:$(feed.width - 604px);
+margin-bottom:0;
 }
 .centered-top .flat-button{
 color:$(header.items.color);
