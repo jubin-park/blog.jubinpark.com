@@ -2115,6 +2115,12 @@ margin-top:24px
 body.item-view .Blog .post-header-container{
 padding-$startSide:140px
 }
+body.page-view .post-title,
+body.page-view .post-author,
+body.page-view .post-timestamp,
+body.page-view .post-author-profile-pic-container{
+display:none !important
+}
 body.item-view .Blog .post-header-container .post-author-profile-pic-container{
 background-color:$(item.title.background.color);
 border-top:1px solid $(item.title.background.color);
@@ -3485,6 +3491,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <b:class cond='data:view.isPreview' name='preview'/>
     <b:class cond='data:view.isMultipleItems' name='feed-view'/>
     <b:class cond='data:view.isSingleItem' name='item-view'/>
+    <b:class cond='data:view.isPage' name='page-view'/>
     <b:class cond='data:view.isArchive' name='archive-view'/>
     <b:class cond='data:view.isLabelSearch' name='label-view'/>
     <b:class cond='data:view.isSearch and !data:view.isLabelSearch' name='search-view'/>
