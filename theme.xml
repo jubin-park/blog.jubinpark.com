@@ -2076,6 +2076,7 @@ margin:32px
 body.item-view .Blog .post-title-container{
 background-color:$(item.title.background.color);
 box-sizing:border-box;
+margin-top:48px;
 margin-bottom:0;
 padding-bottom:16px;
 padding-$endSide:290px;
@@ -2146,7 +2147,7 @@ body.item-view .Blog .post-body-container{
 padding-$endSide:290px;
 position:relative;
 margin-$startSide:140px;
-margin-top:20px;
+margin-top:48px;
 margin-bottom:32px
 }
 body.item-view .Blog .post-body{
@@ -2761,7 +2762,7 @@ body.item-view .Blog .post-header-container{
 padding-$startSide:calc((100% - 920px)/ 2)
 }
 body.item-view .Blog .post-body-container,body.item-view .comments,body.item-view .post-outer-container>.shown-ad,body.item-view .widget.Blog .post-bottom{
-margin:32px calc((100% - 920px)/ 2);
+margin:48px calc((100% - 920px)/ 2);
 padding:0
 }
 body.item-view .cmt_iframe_holder{
@@ -2848,7 +2849,7 @@ body.item-view .Blog .post-header-container{
 padding-$startSide:24px
 }
 body.item-view .Blog .post-body-container,body.item-view .PopularPosts,body.item-view .comments,body.item-view .post-outer-container>.shown-ad,body.item-view .widget.Blog .post-bottom{
-margin:32px 24px;
+margin:48px 24px;
 padding:0
 }
 .FeaturedPost h3,body.feed-view .blog-posts,body.feed-view .feed-message{
@@ -3288,7 +3289,7 @@ color:inherit;
               <b:include name='footerBylines'/>
             </div>
             <b:include cond='data:view.isSingleItem and data:widget.type == &quot;Blog&quot;' data='{ shareButtonClass: &quot;post-share-buttons-bottom&quot;, overridden: true }' name='maybeAddShareButtons'/>
-            <b:include cond='data:view.isMultipleItems or data:widget.type == &quot;PopularPosts&quot;' data='post' name='postJumpLink'/>
+
           </div>
         </b:includable>
         <b:includable id='headerByline'>
@@ -3308,14 +3309,7 @@ color:inherit;
         <b:includable id='postShareButtons'>
           <b:include cond='data:view.isMultipleItems or data:widget.type != &quot;Blog&quot;' name='super.postShareButtons'/>
         </b:includable>
-        <b:includable id='postJumpLink' var='post'>
-          <b:comment>Show a &#39;read more&#39; link if no jump link is present.</b:comment>
-          <div class='byline jump-link'>
-            <a class='flat-button ripple' expr:href='data:post.hasJumpLink ? data:post.url fragment &quot;more&quot; : data:post.url' expr:title='data:post.title'>
-              <b:eval expr='data:blog.jumpLinkMessage'/>
-            </a>
-          </div>
-        </b:includable>
+        <b:includable id='postJumpLink' var='post'></b:includable>
         <b:includable id='sharingButtonContent'>
           <b:comment>Mark parent byline element as a flat-button.</b:comment>
           <b:class name='flat-button ripple'/>
@@ -3813,17 +3807,9 @@ document.addEventListener('DOMContentLoaded', function() {
               <b:include name='footerBylines'/>
             </div>
             <b:include cond='data:view.isSingleItem and data:widget.type == &quot;Blog&quot;' data='{ shareButtonClass: &quot;post-share-buttons-bottom&quot;, overridden: true }' name='maybeAddShareButtons'/>
-            <b:include cond='data:view.isMultipleItems or data:widget.type == &quot;PopularPosts&quot;' data='post' name='postJumpLink'/>
           </div>
         </b:includable>
-                      <b:includable id='postJumpLink' var='post'>
-          <b:comment>Show a &#39;read more&#39; link if no jump link is present.</b:comment>
-          <div class='byline jump-link'>
-            <a class='flat-button ripple' expr:href='data:post.hasJumpLink ? data:post.url fragment &quot;more&quot; : data:post.url' expr:title='data:post.title'>
-              <b:eval expr='data:blog.jumpLinkMessage'/>
-            </a>
-          </div>
-        </b:includable>
+                      <b:includable id='postJumpLink' var='post'></b:includable>
                       <b:includable id='postLabels'>
   <span class='byline post-labels'>
     <span class='byline-label'><data:byline.label/></span>
@@ -4330,7 +4316,6 @@ document.addEventListener('DOMContentLoaded', function() {
               <b:include name='footerBylines'/>
             </div>
             <b:include cond='data:view.isSingleItem and data:widget.type == &quot;Blog&quot;' data='{ shareButtonClass: &quot;post-share-buttons-bottom&quot;, overridden: true }' name='maybeAddShareButtons'/>
-            <b:include cond='data:view.isMultipleItems or data:widget.type == &quot;PopularPosts&quot;' data='post' name='postJumpLink'/>
           </div>
         </b:includable>
                       <b:includable id='postFooterAuthorProfile' var='post'>
@@ -4350,14 +4335,7 @@ document.addEventListener('DOMContentLoaded', function() {
                       <b:includable id='postHeader' var='post'>
   <b:include name='headerByline'/>
 </b:includable>
-                      <b:includable id='postJumpLink' var='post'>
-          <b:comment>Show a &#39;read more&#39; link if no jump link is present.</b:comment>
-          <div class='byline jump-link'>
-            <a class='flat-button ripple' expr:href='data:post.hasJumpLink ? data:post.url fragment &quot;more&quot; : data:post.url' expr:title='data:post.title'>
-              <b:eval expr='data:blog.jumpLinkMessage'/>
-            </a>
-          </div>
-        </b:includable>
+                      <b:includable id='postJumpLink' var='post'></b:includable>
                       <b:includable id='postLabels'>
   <span class='byline post-labels'>
     <span class='byline-label'><data:byline.label/></span>
@@ -4712,17 +4690,9 @@ document.addEventListener('DOMContentLoaded', function() {
               <b:include name='footerBylines'/>
             </div>
             <b:include cond='data:view.isSingleItem and data:widget.type == &quot;Blog&quot;' data='{ shareButtonClass: &quot;post-share-buttons-bottom&quot;, overridden: true }' name='maybeAddShareButtons'/>
-            <b:include cond='data:view.isMultipleItems or data:widget.type == &quot;PopularPosts&quot;' data='post' name='postJumpLink'/>
           </div>
         </b:includable>
-                      <b:includable id='postJumpLink' var='post'>
-          <b:comment>Show a &#39;read more&#39; link if no jump link is present.</b:comment>
-          <div class='byline jump-link'>
-            <a class='flat-button ripple' expr:href='data:post.hasJumpLink ? data:post.url fragment &quot;more&quot; : data:post.url' expr:title='data:post.title'>
-              <b:eval expr='data:blog.jumpLinkMessage'/>
-            </a>
-          </div>
-        </b:includable>
+                      <b:includable id='postJumpLink' var='post'></b:includable>
                       <b:includable id='postLabels'>
   <span class='byline post-labels'>
     <span class='byline-label'><data:byline.label/></span>
