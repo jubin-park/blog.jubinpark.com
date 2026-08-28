@@ -3330,7 +3330,6 @@ color:inherit;
       <b:defaultmarkup type='BlogArchive'>
         <b:includable id='main' var='this'>
           <details class='collapsible extendable'>
-            <b:attr cond='data:view.isArchive' name='open' value='open'/>
             <b:with value='true' var='renderAsDetails'>
             <b:with value='data:messages.archive' var='defaultTitle'>
               <b:include name='super.main'/>
@@ -3348,7 +3347,6 @@ color:inherit;
       <b:defaultmarkup type='Label'>
         <b:includable id='main' var='this'>
           <details class='collapsible extendable'>
-            <b:attr cond='data:view.isLabelSearch' name='open' value='open'/>
             <b:with value='true' var='renderAsDetails'>
             <b:with value='data:messages.labels' var='defaultTitle'>
               <b:include name='super.main'/>
@@ -4833,7 +4831,7 @@ document.addEventListener('DOMContentLoaded', function() {
               </b:widget-settings>
               <b:includable id='main' var='this'>
           <details class='collapsible extendable'>
-            <b:attr cond='data:view.isArchive' name='open' value='open'/>
+            <b:attr name='open' value='open'/>
             <b:with value='true' var='renderAsDetails'>
             <b:with value='data:messages.archive' var='defaultTitle'>
               <b:include name='super.main'/>
@@ -4895,7 +4893,7 @@ document.addEventListener('DOMContentLoaded', function() {
               </b:widget-settings>
               <b:includable id='main' var='this'>
           <details class='collapsible extendable'>
-            <b:attr cond='data:view.isLabelSearch' name='open' value='open'/>
+            <b:attr name='open' value='open'/>
             <b:with value='true' var='renderAsDetails'>
             <b:with value='data:messages.labels' var='defaultTitle'>
               <b:include name='super.main'/>
