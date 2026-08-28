@@ -701,9 +701,19 @@ Unable to load Gravatar profile.
             
             iconUrl =
             "https://leetcode.com/favicon.ico";
+
+          /*
+          * Duolingo 문자열이 포함된 경우
+          */
+          } else if (
+            labelLower.indexOf("duolingo") !== -1 ||
+            urlLower.indexOf("duolingo") !== -1
+          ) {
+            
+            iconUrl =
+            "https://www.google.com/s2/favicons?domain=duolingo.com&sz=64";
             
           }
-          
           
           addLink(
           
