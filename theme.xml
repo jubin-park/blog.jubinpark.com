@@ -3459,6 +3459,24 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 //]]>
 </script>
+
+<script type='text/javascript'>
+//<![CDATA[
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.PageList a[href]').forEach(function(link) {
+    try {
+      var url = new URL(link.href, window.location.href);
+
+      if (url.origin !== window.location.origin) {
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+      }
+    } catch (e) {}
+  });
+});
+//]]>
+</script>
+
 </head>
 
   <body class='container'>
@@ -3574,7 +3592,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <b:class cond='data:overflow' name='overflowable-item'/>
     <b:class cond='data:link.isCurrentPage' name='selected'/>
 
-    <a expr:href='data:link.href' target='_blank'><data:link.title/></a>
+    <a expr:href='data:link.href'><data:link.title/></a>
   </li>
 </b:includable>
                     <b:includable id='pageList'>
