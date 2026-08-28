@@ -1,0 +1,744 @@
+<style>
+  .gravatar-profile {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 24px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    box-shadow: 0 5px 24px rgba(0,0,0,.06);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  .gravatar-profile-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  
+  .gravatar-profile-avatar {
+    width: 96px;
+    height: 96px;
+    flex: 0 0 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #f3f4f6;
+  }
+  
+  .gravatar-profile-name {
+    margin: 0 0 5px;
+    padding: 0;
+    color: #111827;
+    font-size: 23px;
+    line-height: 1.3;
+    font-weight: 700;
+  }
+  
+  .gravatar-profile-job {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .gravatar-profile-body {
+    margin-top: 20px;
+  }
+  
+  .gravatar-profile-description {
+    margin: 0 0 18px;
+    color: #4b5563;
+    font-size: 14px;
+    line-height: 1.7;
+    white-space: pre-line;
+  }
+  
+  .gravatar-profile-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 18px;
+    color: #6b7280;
+    font-size: 13px;
+  }
+  
+  .gravatar-profile-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .gravatar-profile-meta-label {
+    min-width: 65px;
+    color: #9ca3af;
+    font-weight: 600;
+  }
+  
+  .gravatar-profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .gravatar-profile-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 11px;
+    border: 1px solid #e5e7eb;
+    border-radius: 9px;
+    background: #f9fafb;
+    color: #374151;
+    font-size: 13px;
+    line-height: 1.3;
+    text-decoration: none;
+    transition:
+    background .15s ease,
+    border-color .15s ease,
+    transform .15s ease;
+  }
+  
+  .gravatar-profile-link:hover {
+    background: #f3f4f6;
+    border-color: #d1d5db;
+    transform: translateY(-1px);
+  }
+  
+  .gravatar-profile-link-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    flex: 0 0 18px;
+    border-radius: 4px;
+  }
+  
+  .gravatar-profile-link-text {
+    white-space: nowrap;
+  }
+  
+  .gravatar-profile-loading {
+    color: #9ca3af;
+    font-size: 14px;
+  }
+  
+  .gravatar-profile-error {
+    color: #9ca3af;
+    font-size: 13px;
+  }
+  
+  @media (max-width: 480px) {
+    
+    .gravatar-profile {
+      padding: 18px;
+      border-radius: 14px;
+    }
+    
+    .gravatar-profile-header {
+      gap: 14px;
+    }
+    
+    .gravatar-profile-avatar {
+      width: 72px;
+      height: 72px;
+      flex-basis: 72px;
+    }
+    
+    .gravatar-profile-name {
+      font-size: 19px;
+    }
+    
+    .gravatar-profile-job {
+      font-size: 13px;
+    }
+    
+    .gravatar-profile-description {
+      font-size: 13px;
+    }
+  }
+</style>
+
+<div class="gravatar-profile" id="gravatar-profile">
+  
+  <div
+  class="gravatar-profile-loading"
+  id="gravatar-loading">
+  Loading profile...
+</div>
+
+<div
+id="gravatar-content"
+style="display:none;">
+
+<div class="gravatar-profile-header">
+  
+  <img
+  class="gravatar-profile-avatar"
+  id="gravatar-avatar"
+  src=""
+  alt="">
+  
+  <div>
+    
+    <h3
+    class="gravatar-profile-name"
+    id="gravatar-name">
+  </h3>
+  
+  <p
+  class="gravatar-profile-job"
+  id="gravatar-job">
+</p>
+
+</div>
+
+</div>
+
+
+<div class="gravatar-profile-body">
+  
+  <p
+  class="gravatar-profile-description"
+  id="gravatar-description">
+</p>
+
+
+<div
+class="gravatar-profile-meta"
+id="gravatar-meta">
+
+<div
+class="gravatar-profile-meta-item"
+id="gravatar-location-row"
+style="display:none;">
+
+<span class="gravatar-profile-meta-label">
+  Location
+</span>
+
+<span id="gravatar-location">
+</span>
+
+</div>
+
+</div>
+
+
+<div
+class="gravatar-profile-links"
+id="gravatar-links">
+</div>
+
+</div>
+
+
+</div>
+
+<div
+class="gravatar-profile-error"
+id="gravatar-error"
+style="display:none;">
+Unable to load Gravatar profile.
+</div>
+
+</div>
+
+<script>
+  (function () {
+    
+    var WORKER_URL =
+    "https://gravatar.jubin-park0.workers.dev";
+    
+    
+    var loading =
+    document.getElementById(
+    "gravatar-loading"
+    );
+    
+    var content =
+    document.getElementById(
+    "gravatar-content"
+    );
+    
+    var error =
+    document.getElementById(
+    "gravatar-error"
+    );
+    
+    
+    fetch(WORKER_URL)
+    
+    .then(function (response) {
+      
+      if (!response.ok) {
+        throw new Error(
+        "HTTP " + response.status
+        );
+      }
+      
+      return response.json();
+      
+    })
+    
+    
+    .then(function (profile) {
+      
+      /*
+      * ================================
+      * 이름
+      * ================================
+      */
+      
+      var name =
+      document.getElementById(
+      "gravatar-name"
+      );
+      
+      if (profile.display_name) {
+        
+        name.textContent =
+        profile.display_name;
+        
+      }
+      
+      
+      /*
+      * ================================
+      * 프로필 사진
+      * ================================
+      *
+      * API에서 받은 avatar_url에
+      * 512px 크기를 요청
+      */
+      
+      var avatar =
+      document.getElementById(
+      "gravatar-avatar"
+      );
+      
+      if (profile.avatar_url) {
+        
+        var avatarUrl =
+        profile.avatar_url;
+        
+        
+        if (
+        avatarUrl.indexOf("?") === -1
+        ) {
+          
+          avatarUrl +=
+          "?s=512";
+          
+        } else {
+          
+          avatarUrl +=
+          "&s=512";
+          
+        }
+        
+        
+        avatar.src =
+        avatarUrl;
+        
+        avatar.alt =
+        profile.avatar_alt_text ||
+        profile.display_name ||
+        "Gravatar profile";
+        
+      }
+      
+      
+      /*
+      * ================================
+      * 직업
+      * ================================
+      */
+      
+      var job =
+      document.getElementById(
+      "gravatar-job"
+      );
+      
+      if (profile.job_title) {
+        
+        job.textContent =
+        profile.job_title;
+        
+      } else {
+        
+        job.style.display =
+        "none";
+        
+      }
+      
+      
+      /*
+      * ================================
+      * 소개
+      * ================================
+      */
+      
+      var description =
+      document.getElementById(
+      "gravatar-description"
+      );
+      
+      if (profile.description) {
+        
+        description.textContent =
+        profile.description;
+        
+      } else {
+        
+        description.style.display =
+        "none";
+        
+      }
+      
+      
+      /*
+      * ================================
+      * 위치
+      * ================================
+      */
+      
+      var locationRow =
+      document.getElementById(
+      "gravatar-location-row"
+      );
+      
+      var location =
+      document.getElementById(
+      "gravatar-location"
+      );
+      
+      if (profile.location) {
+        
+        location.textContent =
+        profile.location;
+        
+        locationRow.style.display =
+        "flex";
+        
+      }
+      
+      
+      /*
+      * ================================
+      * 링크 영역
+      * ================================
+      */
+      
+      var links =
+      document.getElementById(
+      "gravatar-links"
+      );
+      
+      
+      /*
+      * 중복 URL 저장
+      */
+      var addedUrls = {};
+      
+      
+      /*
+      * ================================
+      * 링크 생성 함수
+      * ================================
+      */
+      
+      function addLink(
+      url,
+      label,
+      iconUrl
+      ) {
+        
+        if (!url) {
+          return;
+        }
+        
+        
+        /*
+        * 같은 URL은 한 번만 표시
+        */
+        if (addedUrls[url]) {
+          return;
+        }
+        
+        addedUrls[url] = true;
+        
+        
+        var link =
+        document.createElement("a");
+        
+        link.className =
+        "gravatar-profile-link";
+        
+        link.href =
+        url;
+        
+        link.target =
+        "_blank";
+        
+        link.rel =
+        "noopener noreferrer";
+        
+        
+        /*
+        * 아이콘
+        */
+        if (iconUrl) {
+          
+          var icon =
+          document.createElement("img");
+          
+          icon.className =
+          "gravatar-profile-link-icon";
+          
+          icon.src =
+          iconUrl;
+          
+          icon.alt =
+          "";
+          
+          icon.loading =
+          "lazy";
+          
+          link.appendChild(
+          icon
+          );
+          
+        }
+        
+        
+        /*
+        * 이름
+        */
+        var text =
+        document.createElement("span");
+        
+        text.className =
+        "gravatar-profile-link-text";
+        
+        text.textContent =
+        label ||
+        "Website";
+        
+        link.appendChild(
+        text
+        );
+        
+        
+        links.appendChild(
+        link
+        );
+        
+      }
+      
+      
+      /*
+      * ================================
+      * 1. Gravatar
+      * ================================
+      *
+      * 항상 첫 번째
+      */
+      
+      addLink(
+      
+      profile.profile_url ||
+      "https://gravatar.com/jubinpark0",
+      
+      "Gravatar",
+      
+      "https://gravatar.com/favicon.ico"
+      
+      );
+      
+      
+      /*
+      * ================================
+      * 2. Verified Accounts
+      * ================================
+      *
+      * LinkedIn
+      * GitHub
+      * GitLab
+      * X
+      * 기타 인증 계정
+      */
+      
+      if (
+      Array.isArray(
+      profile.verified_accounts
+      )
+      ) {
+        
+        profile.verified_accounts.forEach(
+        function (account) {
+          
+          if (
+          account.is_hidden ||
+          !account.url
+          ) {
+            return;
+          }
+          
+          
+          addLink(
+          
+          account.url,
+          
+          account.service_label ||
+          account.service_type ||
+          "Profile",
+          
+          account.service_icon ||
+          ""
+          
+          );
+          
+        }
+        );
+        
+      }
+      
+      
+      /*
+      * ================================
+      * 3. 일반 Links
+      * ================================
+      *
+      * Blogger
+      * Discord
+      * Portfolio
+      * Website
+      * 기타
+      */
+      
+      if (
+      Array.isArray(
+      profile.links
+      )
+      ) {
+        
+        profile.links.forEach(
+        function (item) {
+          
+          if (
+          !item ||
+          !item.url
+          ) {
+            return;
+          }
+          
+          
+          var iconUrl = "";
+          var labelLower = (item.label || "").toLowerCase();
+          var urlLower = item.url.toLowerCase();
+          
+          
+          /*
+          * Blogger인 경우
+          */
+          if (
+          labelLower === "blogger"
+          ) {
+            
+            iconUrl =
+            "https://www.blogger.com/favicon.ico";
+            
+          /*
+          * Discord 문자열이 포함된 경우
+          */
+          } else if (
+          labelLower.indexOf("discord") !== -1 ||
+          urlLower.indexOf("discord") !== -1
+          ) {
+            
+            iconUrl =
+            "https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png";
+            
+          }
+          
+          
+          addLink(
+          
+          item.url,
+          
+          item.label ||
+          "Website",
+          
+          iconUrl
+          
+          );
+          
+        }
+        );
+        
+      }
+      
+      
+      /*
+      * ================================
+      * 링크가 하나도 없으면 숨김
+      * ================================
+      */
+      
+      if (
+      !links.children.length
+      ) {
+        
+        links.style.display =
+        "none";
+      }
+      
+      
+      /*
+      * ================================
+      * 표시
+      * ================================
+      */
+      
+      loading.style.display =
+      "none";
+      
+      content.style.display =
+      "block";
+      
+    })
+    
+    
+    /*
+    * ================================
+    * 오류 처리
+    * ================================
+    */
+    
+    .catch(function (err) {
+      
+      console.error(
+      "Gravatar API error:",
+      err
+      );
+      
+      loading.style.display =
+      "none";
+      
+      error.style.display =
+      "block";
+      
+    });
+    
+  })();
+</script>
+
+
+
+<pre class="markdown">
+
+# 주인장 박주빈
+
+안녕하세요. 박주빈입니다.
+
+</pre>
